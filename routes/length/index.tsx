@@ -7,7 +7,9 @@ import { Input } from '../../components/Input.tsx';
 export const handler = define.handlers({
   async GET(ctx) {
     ctx.state.title = 'Length Conversion';
-    const data = await fetch(`http://localhost:8000/api${ctx.route}`);
+    console.log(ctx.state);
+
+    const data = await fetch(`${ctx.url.origin}/api${ctx.route}`);
     const json = await data.json() as string[];
     json.unshift('');
     return {

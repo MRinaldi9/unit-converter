@@ -3,8 +3,7 @@ import { type State } from './utils.ts';
 
 export const app = new App<State>();
 
-app.use(staticFiles());
-app.use(csrf());
+app.use(staticFiles(), csrf());
 
 // Include file-system based routes here
 app.fsRoutes();
