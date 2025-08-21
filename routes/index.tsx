@@ -1,20 +1,21 @@
-import { useSignal } from '@preact/signals';
-import Counter from '../islands/Counter.tsx';
 import { define } from '../utils.ts';
 
 export default define.page(function Home(_ctx) {
-  const count = useSignal(0);
-
   return (
-    <div class='px-4 py-8 mx-auto fresh-gradient min-h-screen'>
-      <div class='max-w-screen-md mx-auto flex flex-col items-center justify-center'>
-        <h1 class='text-4xl font-bold'>Welcome to Fresh</h1>
-        <p class='my-4'>
-          Try updating this message in the
-          <code class='mx-2'>./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
-      </div>
+    <div class='max-w-screen-md mx-auto flex flex-col items-center justify-center'>
+      <h1 class='text-4xl font-bold'>Welcome to Unit Converter</h1>
+      <p class='my-4'>
+        This is a simple unit converter application built with Fresh and based
+        on the exceptional{' '}
+        <a
+          class='text-secondary hover:underline'
+          href='https://roadmap.sh/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          Roadmap Project
+        </a>.
+      </p>
     </div>
   );
 });

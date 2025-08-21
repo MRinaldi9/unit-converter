@@ -1,6 +1,6 @@
 import { computed, type Signal } from '@preact/signals';
 import { For } from '@preact/signals/utils';
-import { Select } from '../../../components/Select.tsx';
+import { Select } from '../components/Select.tsx';
 type UnitToConvertProps = {
   fromConvert: Signal<Array<{ value: string; label: string }>>;
   fromConvertSelected: Signal<string>;

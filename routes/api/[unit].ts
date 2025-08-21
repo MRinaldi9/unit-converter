@@ -12,8 +12,21 @@ const unitMap = {
     { value: 'ft', label: 'Foot' },
     { value: 'yd', label: 'Yard' },
   ],
-  weight: ['milligram', 'gram', 'kilogram', 'pound', 'ounce'],
-  temperature: ['celsius', 'fahrenheit', 'kelvin'],
+  weight: [
+    { value: 'mg', label: 'Milligram' },
+    { value: 'g', label: 'Gram' },
+    { value: 'kg', label: 'Kilogram' },
+    { value: 'lb', label: 'Pound' },
+    { value: 'oz', label: 'Ounce' },
+  ],
+  temperature: [
+    { value: 'C', label: 'Celsius' },
+    {
+      value: 'F',
+      label: 'Fahrenheit',
+    },
+    { value: 'K', label: 'Kelvin' },
+  ],
 };
 
 export const handler = define.handlers({

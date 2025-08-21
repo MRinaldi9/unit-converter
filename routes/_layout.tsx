@@ -23,7 +23,7 @@ export default function Layout({ Component }: PageProps) {
         <Navbar />
       </header>
 
-      <main class='container mx-auto pt-2 flex justify-center'>
+      <main class='container mx-auto pt-8 flex justify-center'>
         <Component />
       </main>
     </>
