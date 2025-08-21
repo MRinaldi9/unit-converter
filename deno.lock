@@ -4,23 +4,30 @@
     "jsr:@deno/esbuild-plugin@^1.2.0": "1.2.0",
     "jsr:@deno/loader@~0.3.3": "0.3.5",
     "jsr:@fresh/build-id@1": "1.0.0",
-    "jsr:@fresh/core@^2.0.0-alpha.37": "2.0.0-alpha.58",
-    "jsr:@fresh/core@^2.0.0-alpha.58": "2.0.0-alpha.58",
+    "jsr:@fresh/core@^2.0.0-alpha.37": "2.0.0-alpha.59",
+    "jsr:@fresh/core@^2.0.0-alpha.58": "2.0.0-alpha.59",
     "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.9": "0.0.1-alpha.9",
     "jsr:@std/bytes@^1.0.6": "1.0.6",
+    "jsr:@std/cli@^1.0.21": "1.0.21",
     "jsr:@std/encoding@1": "1.0.10",
     "jsr:@std/encoding@^1.0.10": "1.0.10",
     "jsr:@std/fmt@^1.0.8": "1.0.8",
     "jsr:@std/fs@1": "1.0.19",
+    "jsr:@std/fs@^1.0.19": "1.0.19",
     "jsr:@std/html@1": "1.0.4",
+    "jsr:@std/html@^1.0.4": "1.0.4",
     "jsr:@std/http@^1.0.15": "1.0.20",
+    "jsr:@std/http@^1.0.20": "1.0.20",
     "jsr:@std/internal@^1.0.10": "1.0.10",
     "jsr:@std/json@^1.0.2": "1.0.2",
     "jsr:@std/jsonc@1": "1.0.2",
     "jsr:@std/media-types@1": "1.1.0",
+    "jsr:@std/media-types@^1.1.0": "1.1.0",
+    "jsr:@std/net@^1.0.4": "1.0.5",
     "jsr:@std/path@1": "1.1.2",
     "jsr:@std/path@^1.1.1": "1.1.2",
     "jsr:@std/semver@1": "1.0.5",
+    "jsr:@std/streams@^1.0.10": "1.0.11",
     "jsr:@std/uuid@^1.0.7": "1.0.9",
     "npm:@opentelemetry/api@^1.9.0": "1.9.0",
     "npm:@preact/signals@^2.2.1": "2.2.1_preact@10.27.1",
@@ -62,11 +69,34 @@
         "jsr:@fresh/build-id",
         "jsr:@std/encoding@1",
         "jsr:@std/fmt",
-        "jsr:@std/fs",
-        "jsr:@std/html",
-        "jsr:@std/http",
+        "jsr:@std/fs@1",
+        "jsr:@std/html@1",
+        "jsr:@std/http@^1.0.15",
         "jsr:@std/jsonc",
-        "jsr:@std/media-types",
+        "jsr:@std/media-types@1",
+        "jsr:@std/path@1",
+        "jsr:@std/semver",
+        "jsr:@std/uuid",
+        "npm:@opentelemetry/api",
+        "npm:@preact/signals",
+        "npm:esbuild-wasm",
+        "npm:esbuild@0.25.7",
+        "npm:preact",
+        "npm:preact-render-to-string"
+      ]
+    },
+    "@fresh/core@2.0.0-alpha.59": {
+      "integrity": "4525d4c0cc200b04d703a08310489087f1465833ff64806997a1f8af3ff2d0c1",
+      "dependencies": [
+        "jsr:@deno/esbuild-plugin",
+        "jsr:@fresh/build-id",
+        "jsr:@std/encoding@1",
+        "jsr:@std/fmt",
+        "jsr:@std/fs@1",
+        "jsr:@std/html@1",
+        "jsr:@std/http@^1.0.15",
+        "jsr:@std/jsonc",
+        "jsr:@std/media-types@1",
         "jsr:@std/path@1",
         "jsr:@std/semver",
         "jsr:@std/uuid",
@@ -89,6 +119,9 @@
     "@std/bytes@1.0.6": {
       "integrity": "f6ac6adbd8ccd99314045f5703e23af0a68d7f7e58364b47d2c7f408aeb5820a"
     },
+    "@std/cli@1.0.21": {
+      "integrity": "cd25b050bdf6282e321854e3822bee624f07aca7636a3a76d95f77a3a919ca2a"
+    },
     "@std/encoding@1.0.10": {
       "integrity": "8783c6384a2d13abd5e9e87a7ae0520a30e9f56aeeaa3bdf910a3eaaf5c811a1"
     },
@@ -107,7 +140,15 @@
     "@std/http@1.0.20": {
       "integrity": "b5cc33fc001bccce65ed4c51815668c9891c69ccd908295997e983d8f56070a1",
       "dependencies": [
-        "jsr:@std/encoding@^1.0.10"
+        "jsr:@std/cli",
+        "jsr:@std/encoding@^1.0.10",
+        "jsr:@std/fmt",
+        "jsr:@std/fs@^1.0.19",
+        "jsr:@std/html@^1.0.4",
+        "jsr:@std/media-types@^1.1.0",
+        "jsr:@std/net",
+        "jsr:@std/path@^1.1.1",
+        "jsr:@std/streams"
       ]
     },
     "@std/internal@1.0.10": {
@@ -125,6 +166,9 @@
     "@std/media-types@1.1.0": {
       "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
     },
+    "@std/net@1.0.5": {
+      "integrity": "b759d8c5e17d997e164af6379d57764668c6714f30109685eec0fd5e194d501a"
+    },
     "@std/path@1.1.2": {
       "integrity": "c0b13b97dfe06546d5e16bf3966b1cadf92e1cc83e56ba5476ad8b498d9e3038",
       "dependencies": [
@@ -133,6 +177,9 @@
     },
     "@std/semver@1.0.5": {
       "integrity": "529f79e83705714c105ad0ba55bec0f9da0f24d2f726b6cc1c15e505cc2c0624"
+    },
+    "@std/streams@1.0.11": {
+      "integrity": "db583d27e28d133f389f1eec318cffdf4998305e5134c1d4b1c56b361cee6018"
     },
     "@std/uuid@1.0.9": {
       "integrity": "44b627bf2d372fe1bd099e2ad41b2be41a777fc94e62a3151006895a037f1642",
@@ -709,6 +756,7 @@
     "dependencies": [
       "jsr:@fresh/core@^2.0.0-alpha.58",
       "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.9",
+      "jsr:@std/http@^1.0.20",
       "npm:@preact/signals@^2.2.1",
       "npm:@tailwindcss/postcss@^4.1.10",
       "npm:@tailwindcss/typography@~0.5.16",
